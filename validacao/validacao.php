@@ -21,6 +21,6 @@
 
         header('Location:../1_camera.php');
     } else {
-        header('Location:../1_camera.php');
+        header('Location:../error.html');
     }    
 ?>
