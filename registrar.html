@@ -17,8 +17,10 @@
     <div class="container-fluid mt-4">
         <div class=" card text-center">
             <div class="card-body">
-                <h3 class="card-title">Oi, você de novo QPass</h3>😁
-                <a id="emp" class="card-subtitle mb-2 text-muted">by: ctrl+shift+QUACK</a>
+                <h3 class="card-title">bem vindo ao QPass</h3>
+                <a>Vai ser muito bom ter você com a gente</a>
+                <br>
+                <a id="emp" class="card-subtitle mb-2 mt-2 text-muted">by: ctrl+shift+QUACK</a>
                 <br>
                 <br>
             </div>
@@ -26,14 +28,18 @@
 
             <form method="POST" action="validacao/validacao.php">
                 <div class="campo form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" type="email" name="user" aria-describedby="emailHelp">
-                    <small class="form-text text-muted">relaxa, a gente não vai te mandar spam.</small>
+                   
+                    <input type="password" class="form-control" type="password" name="pass" placeholder="nome">
                 </div>
                 <div class="campo form-group">
-                    <label for="exampleInputPassword1">Senha</label>
-                    <input type="password" class="form-control" type="password" name="pass">
+                    
+                    <input type="email" class="form-control" type="email" name="user" aria-describedby="emailHelp" placeholder="Email">
+                    <small class="form-text text-muted">relaxa, a gente guarda ele bem seguro de baixo do colchão</small>
                 </div>
+                <div class="campo form-group">
+                    <input type="password" class="form-control" type="password" name="pass" placeholder="senha">
+                </div>
+                
                 <button type="submit" class="btn btn-primary">Feito</button>
             </form>
             <br>

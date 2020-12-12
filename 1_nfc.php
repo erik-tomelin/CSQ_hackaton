@@ -6,10 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-   <link rel="stylesheet" href="styles/bunito.css">
+   <link rel="stylesheet" href="styles/bunito2.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-   <title>MEU QPass CAM</title>
+   <title>MEU QPass NFC</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
    <div class="container-fluid mt-4">
       <div class=" card text-center">
          <div class="card-body">
-            <h2 class="card-title">QPass</h2>
+            <h2 class="card-title">QPpass</h2>
             <a id="emp" class="card-subtitle mb-2 text-muted">by: ctrl+shift+QUACK</a>
             <br>
             <br>
@@ -26,7 +26,7 @@
             <h6 id="passes"></h6>
 
             <script>
-               dinheiro = 150;
+               dinheiro = 98.50;
                passeJoinville = 4.75;
                numPasse = 0;
                arredondaDinheiro = dinheiro;
@@ -43,20 +43,18 @@
                   document.getElementById("calculo").innerHTML = "R$ " + arredondaDinheiro;
 
                   numPasse = dinheiro / passeJoinville;
-
                   var arredondaPasse = (Math.trunc(numPasse));
                   document.getElementById("passes").innerHTML = "Você tem " + arredondaPasse + " disponíveis";
                }
                document.querySelector('#calculo').innerHTML = 'R$ ' + arredondaDinheiro;
                document.querySelector('#passes').innerHTML = 'Você tem ' + arredondaPasse + ' disponíveis';
             </script>
-
             <br>
-            <input type="button" class="myButton" value="Câmera"></input>
-            <a type="submit" class="myButton2" value="NFC" href="nfc.html">NFC</a>
+            <a type="button" class="myButton" value="Câmera" href="1_camera.php">Câmera</a>
+            <input type="button" class="myButton2" value="NFC"></input>
             <br>
             <div class="qr_cod">
-               <img class="logo mt-4 mb-4" src="https://imgur.com/c8mWhNV.png" width="50%">
+               <img class="logo mt-4 mb-4" src="https://imgur.com/NRKGoYl.png" width="50%">
                <div class="token mb-3">
                   <a id="numero">
                      <script>
@@ -67,7 +65,7 @@
                   </a>
                </div>
             </div>
-            <a id="dig mb-3">aproxime a câmera do código QR</a>
+            <a id="dig mb-3">aproxime o seu aparelho do leitor</a>
             <br>
             <br>
 

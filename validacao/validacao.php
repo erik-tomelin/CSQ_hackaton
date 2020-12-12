@@ -19,8 +19,8 @@
         echo $_SESSION['user'];
         echo $_SESSION['pass'];
 
-        header('Location:../telaUser.php');
+        header('Location:../1_camera.php');
     } else {
-        echo "teste";
+        header('Location:../1_camera.php');
     }    
 ?>

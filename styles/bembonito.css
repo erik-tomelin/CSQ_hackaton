@@ -46,3 +46,8 @@ body{
 	position:relative;
 	top:1px;
 }
+
+.campo{
+    width: 75%;
+    margin-left: 13%;
+}

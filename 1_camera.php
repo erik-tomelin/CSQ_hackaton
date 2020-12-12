@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="styles/bunito.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-   <title>MEU e-pass</title>
+   <title>MEU QPass CAM</title>
 </head>
 
 <body>
@@ -17,26 +17,53 @@
    <div class="container-fluid mt-4">
       <div class=" card text-center">
          <div class="card-body">
-            <h2 class="card-title">E-pass</h2>
+            <h2 class="card-title">QPass</h2>
             <a id="emp" class="card-subtitle mb-2 text-muted">by: ctrl+shift+QUACK</a>
             <br>
             <br>
             <h4>seu saldo:</h4>
-            <h2>R$54,85</h2>
-            <br>
+            <h2 id="calculo"></h2>
+            <h6 id="passes"></h6>
+
+            <script>
+               dinheiro = 150;
+               passeJoinville = 4.75;
+               numPasse = 0;
+               arredondaDinheiro = dinheiro;
+
+               numPasse = dinheiro / passeJoinville;
+               var arredondaPasse = (Math.trunc(numPasse));
+
+               function CalculaDinheiro() {
+                  if (dinheiro > 4.75) {
+                     dinheiro = dinheiro - passeJoinville;
+                  }                 
+
+                  var arredondaDinheiro = parseFloat(dinheiro.toFixed(2));
+                  document.getElementById("calculo").innerHTML = "R$ " + arredondaDinheiro;
+
+                  numPasse = dinheiro / passeJoinville;
+
+                  var arredondaPasse = (Math.trunc(numPasse));
+                  document.getElementById("passes").innerHTML = "Você tem " + arredondaPasse + " disponíveis";
+               }
+               document.querySelector('#calculo').innerHTML = 'R$ ' + arredondaDinheiro;
+               document.querySelector('#passes').innerHTML = 'Você tem ' + arredondaPasse + ' disponíveis';
+            </script>
+
             <br>
             <input type="button" class="myButton" value="Câmera"></input>
-            <input type="button" class="myButton2" value="NFC"></input>
+            <a type="submit" class="myButton2" value="NFC" href="1_nfc.php">NFC</a>
             <br>
             <div class="qr_cod">
-               <img class="logo mt-4 mb-4 vertical-img" src="https://imgur.com/e5wVJqS.png" width="50%">
+               <img class="logo mt-4 mb-4" src="https://imgur.com/c8mWhNV.png" width="50%">
                <div class="token mb-3">
                   <a id="numero">
                      <script>
                         function getRandom() {
                            document.getElementById("numero").innerHTML = (Math.floor(Math.random() * 8889) + 1000);
                         }
-                     </script>   
+                     </script>
                   </a>
                </div>
             </div>
@@ -45,7 +72,7 @@
             <br>
 
             <input type="button" class="gerar" onclick="getRandom()" value="Gerar um código"></input>
-            <input type="button" class="gerar" onclick="#" value="Concluído"></input>
+            <input type="button" class="gerar" onclick="CalculaDinheiro()" value="Concluído"></input>
             <!--
                <a href="#" class="card-link">Gerar um código</a>
                <a href="#" class="card-link">Concluído</a>
