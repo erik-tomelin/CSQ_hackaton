@@ -26,7 +26,7 @@ body{
     margin-left: 35%;
 }
 
-.myButton2 {
+.myButton {
 	background-color:#3c5e5e;
 	border-radius:17px;
 	border:1px solid #fafafa;
@@ -39,15 +39,15 @@ body{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
-.myButton2:hover {
+.myButton:hover {
 	background-color:#08915d;
 }
-.myButton2:active {
+.myButton:active {
 	position:relative;
 	top:1px;
 }
 
-.myButton {
+.myButton2 {
 	box-shadow:inset 0px 0px 15px 3px #0f1929;
 	background:linear-gradient(to bottom, #132e3a 5%, #0e8291 100%);
 	background-color:#115a7c;
@@ -60,17 +60,17 @@ body{
 	font-size:15px;
 	padding:11px 20px;
 	text-decoration:none;
-    text-shadow:0px 1px 0px #263666;
+	text-shadow:0px 1px 0px #263666;
 }
-
-.myButton:hover {
+.myButton2:hover {
 	background-color:#0e8291;
 }
 
-.myButton:active {
+.myButton2:active {
 	position:relative;
 	top:1px;
 }
+
 
 .gerar {
 	background-color:#00a173;

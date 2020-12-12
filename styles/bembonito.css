@@ -1,0 +1,48 @@
+/* css para a página home*/
+body{
+    background-color: rgb(2, 145, 145);
+    margin-top: 10%;
+}
+
+.card-title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#emp{
+    font-size: 13px;
+}
+
+#dig{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.logoduck{
+    margin-left: 30%;
+}
+
+.myButton {
+	background-color:#0da86a;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 16px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    width: 45%;
+    margin-left: 25%;
+}
+.myButton:hover {
+	background-color:#0a797d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

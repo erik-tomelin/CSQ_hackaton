@@ -21,6 +21,6 @@
 
         header('Location:../telaUser.php');
     } else {
-        echo "cu";
+        echo "teste";
     }    
 ?>
