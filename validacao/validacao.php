@@ -13,8 +13,8 @@
         $reg_user = mysqli_fetch_array($changeQuery);
         
         $_SESSION['id']     = $reg_user["userID"];
-        $_SESSION['user']   = $email; 
-        $_SESSION['pass']   = $senha; 
+        $_SESSION['user']   = $email;
+        $_SESSION['pass']   = $senha;
         
         echo $_SESSION['user'];
         echo $_SESSION['pass'];
