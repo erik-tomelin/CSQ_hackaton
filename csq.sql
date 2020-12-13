@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11-Dez-2020 às 14:37
+-- Tempo de geração: 13-Dez-2020 às 01:36
 -- Versão do servidor: 10.4.16-MariaDB
 -- versão do PHP: 7.4.12
 
@@ -30,15 +30,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `usuarios` (
   `userID` int(10) NOT NULL,
   `userEmail` varchar(200) NOT NULL,
-  `userPass` varchar(200) NOT NULL
+  `userPass` varchar(200) NOT NULL,
+  `joinvillePasse` float NOT NULL,
+  `userDinheiro` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`userID`, `userEmail`, `userPass`) VALUES
-(1, 'adm@adm.com', 'admin');
+INSERT INTO `usuarios` (`userID`, `userEmail`, `userPass`, `joinvillePasse`, `userDinheiro`) VALUES
+(1, 'adm@adm.com', 'admin', 4.75, 166.5);
 
 --
 -- Índices para tabelas despejadas
